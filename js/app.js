@@ -6,28 +6,20 @@ if (localStorage.getItem("products")) {
 }
 
 function valName(name) {
-    return document.getElementById(`${name}`).value.match(/^[A-Z][\sA-z]{1,120}$/g) ?
-        true :
-        false;
+    return document.getElementById(`${name}`).value.match(/^[A-Z][\sA-z]{1,120}$/g) 
 }
 
 function valDesc(name) {
-    return document.getElementById(`${name}`).value.match(/^[A-z][A-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/g) ?
-        true :
-        false;
+    return document.getElementById(`${name}`).value.match(/^[A-z][A-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/g) 
 
 }
 
 function valPrice(name) {
-    return document.getElementById(`${name}`).value.match(/^[0-9.]{1,8}$/g) ?
-        true :
-        false;
+    return document.getElementById(`${name}`).value.match(/^[0-9.]{1,8}$/g) 
 }
 
 function valQuantity(name) {
-    return document.getElementById(`${name}`).value.match(/^[0-9]{1,7}$/g) ?
-        true :
-        false;
+    return document.getElementById(`${name}`).value.match(/^[0-9]{1,7}$/g) 
 }
 
 function store() {
